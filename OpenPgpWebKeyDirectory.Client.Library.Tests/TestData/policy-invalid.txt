@@ -1,0 +1,2 @@
+﻿protocol-version: abc
+submission-address: wkd.submission.test.invalid.address

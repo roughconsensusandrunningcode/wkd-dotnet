@@ -1,0 +1,14 @@
+﻿# 
+#
+mailbox-only
+#comment line
+
+auth-submit
+dane-only
+protocol-version: 14
+submission-address: wkd.submission.test@example.com
+
+# experimental flags
+example.com_test
+example.com_testwithvalue: aaaaaaa
+example.com_testwithnumvalue:2000

@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyTitle>WkdChecker</AssemblyTitle>
+	<Version>0.1</Version>
+	<Authors>Fabrizio Tarizzo</Authors>
+	<Copyright>Copyright (c) 2022 Fabrizio Tarizzo</Copyright>
+	<PackageLicenseExpression>MIT</PackageLicenseExpression>
+	<AssemblyName>WkdChecker</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommandLineParser" Version="2.9.1" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OpenPgpWebKeyDirectory.Client.Library.BouncyCastle\OpenPgpWebKeyDirectory.Client.Library.BouncyCastle.csproj" />
+    <ProjectReference Include="..\OpenPgpWebKeyDirectory.Client.Library.Extensions.DependencyInjection\OpenPgpWebKeyDirectory.Client.Library.Extensions.DependencyInjection.csproj" />
+    <ProjectReference Include="..\OpenPgpWebKeyDirectory.Client.Library\OpenPgpWebKeyDirectory.Client.Library.csproj" />
+  </ItemGroup>
+
+</Project>

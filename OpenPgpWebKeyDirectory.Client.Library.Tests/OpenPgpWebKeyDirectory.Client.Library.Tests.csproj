@@ -1,0 +1,82 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.4.1" />
+    <PackageReference Include="MSTest.TestAdapter" Version="2.2.10" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.2.10" />
+    <PackageReference Include="coverlet.collector" Version="3.2.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="RichardSzalay.MockHttp" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OpenPgpWebKeyDirectory.Client.Library.BouncyCastle\OpenPgpWebKeyDirectory.Client.Library.BouncyCastle.csproj" />
+    <ProjectReference Include="..\OpenPgpWebKeyDirectory.Client.Library.Extensions.DependencyInjection\OpenPgpWebKeyDirectory.Client.Library.Extensions.DependencyInjection.csproj" />
+    <ProjectReference Include="..\OpenPgpWebKeyDirectory.Client.Library\OpenPgpWebKeyDirectory.Client.Library.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="TestData\hu\34i6oasjuzeunw5uwam7yqbtit1rtmjp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="TestData\hu\4uoqyth19ibwszqjaokiafhxc5sh6usu">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="TestData\hu\6q1ubufxsqh8fjuewbachy5ocz9seanp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="TestData\hu\87rxmyhh4paokf1apw6qiej8hk6nwuxy">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="TestData\hu\ak7sn4ds3g4chf3aotziiw9wd6jorza6">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="TestData\hu\akkymzzed539gbzjug91rmdwcb6zhdz9">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="TestData\hu\caky1x1mawkc6gg4kge1icod96wqaeax">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="TestData\hu\en84egrfomjthqqzxk5qdg8x3gizrsq6">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="TestData\hu\iz5jxf9oi1mbc1p45s3nxcuxn38qazkw">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="TestData\hu\mmpnd5xu6orrn9wxac534i686zc6syfb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="TestData\hu\n4onc9491c576ftdqr6zojgzm7chfxmy">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="TestData\hu\twbujogw94zbz76qx3qa4gqoa6j5gkge">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="TestData\hu\yropn89zq484hrspynzf49aodxg8gqt6">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="TestData\policy-invalid.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="TestData\policy.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="TestData\submission-address.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="TestData\testsuite.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

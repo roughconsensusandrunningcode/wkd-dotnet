@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFramework>net6.0</TargetFramework>
+	  <ImplicitUsings>enable</ImplicitUsings>
+	  <Nullable>enable</Nullable>
+	  <VersionPrefix>0.15.0</VersionPrefix>
+	  <VersionSuffix>draft</VersionSuffix>
+	  <Authors>Fabrizio Tarizzo</Authors>
+	  <Copyright>Copyright (c) 2022 Fabrizio Tarizzo</Copyright>
+	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
+	  <Title>.NET WKD Client</Title>
+	  <AssemblyTitle>.NET WKD Client</AssemblyTitle>
+	  <Description>A .NET OpenPGP Web Key Directory (WKD) client</Description>
+	  <PackageReadmeFile>README.md</PackageReadmeFile>
+	  <PackageTags>openpgp;key discovery;wkd</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+	<InternalsVisibleTo Include="OpenPgpWebKeyDirectory.Client.Library.Tests" />
+	<None Include="..\README.md" Pack="true" PackagePath="\"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CSharpFunctionalExtensions" Version="2.37.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.2" />
+  </ItemGroup>
+
+</Project>
