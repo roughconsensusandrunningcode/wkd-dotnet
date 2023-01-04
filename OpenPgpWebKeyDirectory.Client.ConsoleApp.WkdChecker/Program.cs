@@ -27,7 +27,9 @@ internal static class Program
         var assembly = typeof(Program).Assembly;
         var title = assembly.GetCustomAttribute<AssemblyTitleAttribute>()?.Title;
         var version = assembly.GetCustomAttribute<AssemblyInformationalVersionAttribute>()?.InformationalVersion;
-        string userAgent = $"{title}/{version}";
+        var repoUrl = assembly.GetCustomAttributes<AssemblyMetadataAttribute>().FirstOrDefault(a => a.Key == "RepositoryUrl")?.Value;
+
+        string userAgent = $"{title}/{version} ({repoUrl})";
 
         var builder = new HostBuilder()
             .ConfigureServices((hostContext, services) =>

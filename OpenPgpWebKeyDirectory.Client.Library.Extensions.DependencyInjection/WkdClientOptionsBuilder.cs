@@ -21,7 +21,9 @@ public sealed class WkdClientOptionsBuilder<TKey>
         var assembly = typeof(IWkdClient<TKey>).Assembly;
         var title = assembly.GetCustomAttribute<AssemblyTitleAttribute>()?.Title;
         var version = assembly.GetCustomAttribute<AssemblyInformationalVersionAttribute>()?.InformationalVersion;
-        UserAgent = $"{title}/{version}";
+        var repoUrl = assembly.GetCustomAttributes<AssemblyMetadataAttribute>().FirstOrDefault(a => a.Key == "RepositoryUrl")?.Value;
+
+        UserAgent = $"{title}/{version} ({repoUrl})";
 
         Timeout = TimeSpan.FromSeconds(100);
     }

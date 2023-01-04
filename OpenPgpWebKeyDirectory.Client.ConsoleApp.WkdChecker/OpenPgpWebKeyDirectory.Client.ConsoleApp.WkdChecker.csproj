@@ -11,6 +11,7 @@
 	<Copyright>Copyright (c) 2022 Fabrizio Tarizzo</Copyright>
 	<PackageLicenseExpression>MIT</PackageLicenseExpression>
 	<AssemblyName>WkdChecker</AssemblyName>
+	<RepositoryUrl>https://github.com/roughconsensusandrunningcode/wkd-dotnet</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
