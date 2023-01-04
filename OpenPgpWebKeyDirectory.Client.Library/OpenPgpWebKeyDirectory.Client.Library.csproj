@@ -13,6 +13,9 @@
 	  <AssemblyTitle>.NET WKD Client</AssemblyTitle>
 	  <Description>A .NET OpenPGP Web Key Directory (WKD) client</Description>
 	  <PackageReadmeFile>README.md</PackageReadmeFile>
+	  <RepositoryType>git</RepositoryType>
+	  <RepositoryUrl>https://github.com/roughconsensusandrunningcode/wkd-dotnet</RepositoryUrl>
+	  <PackageProjectUrl>https://github.com/roughconsensusandrunningcode/wkd-dotnet</PackageProjectUrl>
 	  <PackageTags>openpgp;key discovery;wkd</PackageTags>
   </PropertyGroup>
 

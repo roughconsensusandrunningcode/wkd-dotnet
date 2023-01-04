@@ -10,6 +10,9 @@
 	  <Copyright>Copyright (c) 2022 Fabrizio Tarizzo</Copyright>
 	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
 	  <PackageReadmeFile>README.md</PackageReadmeFile>
+	  <RepositoryType>git</RepositoryType>
+	  <RepositoryUrl>https://github.com/roughconsensusandrunningcode/wkd-dotnet</RepositoryUrl>
+	  <PackageProjectUrl>https://github.com/roughconsensusandrunningcode/wkd-dotnet</PackageProjectUrl>
 	  <PackageTags>openpgp;key discovery;wkd</PackageTags>
   </PropertyGroup>
 
