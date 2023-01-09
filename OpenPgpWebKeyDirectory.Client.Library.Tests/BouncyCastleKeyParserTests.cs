@@ -19,12 +19,18 @@ namespace OpenPgpWebKeyDirectory.Client.Library.BouncyCastle.Tests;
 [TestClass()]
 public class BouncyCastleKeyParserTests
 {
+    private string HuPath(string file)
+       => Path.Combine("TestData", "hu", file);
+
+    private Stream HuFileStream (string file)
+      => new FileStream(HuPath(file), FileMode.Open, FileAccess.Read);
+
     [TestMethod()]
     public void ParseBaseCaseTest()
     {
         IPgpKeyParser<PgpPublicKeyRing> parser = new BouncyCastleKeyParser();
 
-        using var stream = new FileStream($@"TestData\hu\6q1ubufxsqh8fjuewbachy5ocz9seanp", FileMode.Open, FileAccess.Read);
+        using var stream = HuFileStream("6q1ubufxsqh8fjuewbachy5ocz9seanp");
         var parsingResult = parser.Parse(stream);
 
         parsingResult
@@ -56,7 +62,7 @@ public class BouncyCastleKeyParserTests
     {
         IPgpKeyParser<PgpPublicKeyRing> parser = new BouncyCastleKeyParser();
 
-        using var stream = new FileStream($@"TestData\hu\akkymzzed539gbzjug91rmdwcb6zhdz9", FileMode.Open, FileAccess.Read);
+        using var stream = HuFileStream("akkymzzed539gbzjug91rmdwcb6zhdz9");
         var parsingResult = parser.Parse(stream);
 
         parsingResult
@@ -82,7 +88,7 @@ public class BouncyCastleKeyParserTests
     {
         IPgpKeyParser<PgpPublicKeyRing> parser = new BouncyCastleKeyParser();
 
-        using var stream = new FileStream($@"TestData\hu\n4onc9491c576ftdqr6zojgzm7chfxmy", FileMode.Open, FileAccess.Read);
+        using var stream = HuFileStream("n4onc9491c576ftdqr6zojgzm7chfxmy");
         var parsingResult = parser.Parse(stream);
 
         parsingResult
@@ -102,7 +108,7 @@ public class BouncyCastleKeyParserTests
     {
         IPgpKeyParser<PgpPublicKeyRing> parser = new BouncyCastleKeyParser();
 
-        using var stream = new FileStream($@"TestData\hu\twbujogw94zbz76qx3qa4gqoa6j5gkge", FileMode.Open, FileAccess.Read);
+        using var stream = HuFileStream("twbujogw94zbz76qx3qa4gqoa6j5gkge");
         var parsingResult = parser.Parse(stream);
 
         parsingResult
@@ -118,7 +124,7 @@ public class BouncyCastleKeyParserTests
     {
         IPgpKeyParser<PgpPublicKeyRing> parser = new BouncyCastleKeyParser();
 
-        using var stream = new FileStream($@"TestData\hu\iz5jxf9oi1mbc1p45s3nxcuxn38qazkw", FileMode.Open, FileAccess.Read);
+        using var stream = HuFileStream("iz5jxf9oi1mbc1p45s3nxcuxn38qazkw");
         var parsingResult = parser.Parse(stream);
 
         parsingResult
@@ -138,7 +144,7 @@ public class BouncyCastleKeyParserTests
     {
         IPgpKeyParser<PgpPublicKeyRing> parser = new BouncyCastleKeyParser();
 
-        using var stream = new FileStream($@"TestData\hu\en84egrfomjthqqzxk5qdg8x3gizrsq6", FileMode.Open, FileAccess.Read);
+        using var stream = HuFileStream("en84egrfomjthqqzxk5qdg8x3gizrsq6");
         var parsingResult = parser.Parse(stream);
 
         parsingResult
@@ -155,7 +161,7 @@ public class BouncyCastleKeyParserTests
     {
         IPgpKeyParser<PgpPublicKeyRing> parser = new BouncyCastleKeyParser();
 
-        using var stream = new FileStream($@"TestData\hu\mmpnd5xu6orrn9wxac534i686zc6syfb", FileMode.Open, FileAccess.Read);
+        using var stream = HuFileStream("mmpnd5xu6orrn9wxac534i686zc6syfb");
         var parsingResult = parser.Parse(stream);
 
         parsingResult
@@ -172,7 +178,7 @@ public class BouncyCastleKeyParserTests
     {
         IPgpKeyParser<PgpPublicKeyRing> parser = new BouncyCastleKeyParser();
 
-        using var stream = new FileStream($@"TestData\hu\ak7sn4ds3g4chf3aotziiw9wd6jorza6", FileMode.Open, FileAccess.Read);
+        using var stream = HuFileStream("ak7sn4ds3g4chf3aotziiw9wd6jorza6");
         var parsingResult = parser.Parse(stream);
 
         parsingResult
@@ -189,7 +195,7 @@ public class BouncyCastleKeyParserTests
     {
         IPgpKeyParser<PgpPublicKeyRing> parser = new BouncyCastleKeyParser();
 
-        using var stream = new FileStream($@"TestData\hu\4uoqyth19ibwszqjaokiafhxc5sh6usu", FileMode.Open, FileAccess.Read);
+        using var stream = HuFileStream("4uoqyth19ibwszqjaokiafhxc5sh6usu");
         var parsingResult = parser.Parse(stream);
 
         parsingResult
@@ -206,7 +212,7 @@ public class BouncyCastleKeyParserTests
     {
         IPgpKeyParser<PgpPublicKeyRing> parser = new BouncyCastleKeyParser();
 
-        using var stream = new FileStream($@"TestData\hu\6q1ubufxsqh8fjuewbachy5ocz9seanp", FileMode.Open, FileAccess.Read);
+        using var stream = HuFileStream("6q1ubufxsqh8fjuewbachy5ocz9seanp");
         var parsingResult = parser.Parse(stream);
 
         parsingResult
@@ -233,7 +239,7 @@ public class BouncyCastleKeyParserTests
     {
         IPgpKeyParser<PgpPublicKeyRing> parser = new BouncyCastleKeyParser();
 
-        using var stream = new FileStream($@"TestData\hu\6q1ubufxsqh8fjuewbachy5ocz9seanp", FileMode.Open, FileAccess.Read);
+        using var stream = HuFileStream("6q1ubufxsqh8fjuewbachy5ocz9seanp");
         var parsingResult = parser.Parse(stream);
 
         parsingResult

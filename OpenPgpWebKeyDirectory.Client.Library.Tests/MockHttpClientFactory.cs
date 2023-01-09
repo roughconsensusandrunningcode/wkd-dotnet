@@ -13,9 +13,9 @@ namespace OpenPgpWebKeyDirectory.Client.Library.Tests;
 
 internal class MockHttpClientFactory
 {
-    private readonly string policy = File.ReadAllText(@"TestData\policy.txt");
-    private readonly string policyInvalid = File.ReadAllText(@"TestData\policy-invalid.txt");
-    private readonly string submissionAddress = File.ReadAllText(@"TestData\submission-address.txt");
+    private readonly string policy = File.ReadAllText(Path.Combine("TestData", "policy.txt"));
+    private readonly string policyInvalid = File.ReadAllText(Path.Combine("TestData", "policy-invalid.txt"));
+    private readonly string submissionAddress = File.ReadAllText(Path.Combine("TestData", "submission-address.txt"));
 
     internal MockHttpClientFactory()
     {
@@ -25,7 +25,7 @@ internal class MockHttpClientFactory
     {
         var mock = new MockHttpMessageHandler();
 
-        string json = File.ReadAllText(@"TestData\testsuite.json");
+        string json = File.ReadAllText(Path.Combine("TestData", "testsuite.json"));
         var options = new JsonSerializerOptions
         {
             PropertyNameCaseInsensitive = true
@@ -34,7 +34,7 @@ internal class MockHttpClientFactory
 
         foreach (var testCase in testSuite.TestCases)
         {
-            var path = "TestData" + testCase.CertificatePath;
+            var path = Path.Combine("TestData", "hu", testCase.CertificatePath);
             if (File.Exists(path))
             {
                 var data = File.ReadAllBytes(path);
