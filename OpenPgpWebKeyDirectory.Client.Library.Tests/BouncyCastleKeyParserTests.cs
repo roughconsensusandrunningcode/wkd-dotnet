@@ -19,10 +19,10 @@ namespace OpenPgpWebKeyDirectory.Client.Library.BouncyCastle.Tests;
 [TestClass()]
 public class BouncyCastleKeyParserTests
 {
-    private string HuPath(string file)
+    private static string HuPath(string file)
        => Path.Combine("TestData", "hu", file);
 
-    private Stream HuFileStream (string file)
+    private static Stream HuFileStream (string file)
       => new FileStream(HuPath(file), FileMode.Open, FileAccess.Read);
 
     [TestMethod()]
