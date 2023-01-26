@@ -47,9 +47,8 @@ internal static class WkdUriUtils
 
     private static string EncodeWkdHash(this string localPart)
     {
-        using var sha1 = SHA1.Create();
         var bytes = Encoding.UTF8.GetBytes(localPart.ToLowerInvariant());
-        var hash = sha1.ComputeHash(bytes);
+        var hash = SHA1.HashData(bytes);
         return ZBase32.Encode(hash);
     }
     private static string UrlEncode(this string localPart)
