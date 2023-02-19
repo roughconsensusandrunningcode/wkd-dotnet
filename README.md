@@ -9,7 +9,7 @@ WKD Client library. Implements Key discovery, Policy file and Submission Address
 Uses: [CSharpFunctionalExtensions](https://github.com/vkhorikov/CSharpFunctionalExtensions)
 
 ### OpenPgpWebKeyDirectory.Client.Library.BouncyCastle
-Implements `IPgpKeyParser` and `IPgpKeyWrapper` using the [Bouncy Castle 2.0](https://www.bouncycastle.org/csharp/) crypto library.
+Implements `IPgpKeyParser` and `IPgpKeyWrapper` using the [Bouncy Castle 2.1](https://www.bouncycastle.org/csharp/) crypto library.
 
 ### OpenPgpWebKeyDirectory.Client.Library.Extensions.DependencyInjection
 Methods and classes for configuring the WKD Client and related services into the Microsoft dependency injection container.
