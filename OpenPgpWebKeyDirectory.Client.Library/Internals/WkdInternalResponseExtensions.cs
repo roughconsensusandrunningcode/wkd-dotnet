@@ -25,4 +25,3 @@ internal static class WkdInternalResponseExtensions
     internal static Task<Result<WkdInternalResponse<K>, WkdErrorCollection>> Bind<T, K>(this Task<Result<WkdInternalResponse<T>, WkdErrorCollection>> self, Func<T, Result<K, WkdErrorCollection>> func)
         => self.Bind(response => func.Invoke(response.Value).Map(x => new WkdInternalResponse<K>(response.Method, x)));
 }
-
