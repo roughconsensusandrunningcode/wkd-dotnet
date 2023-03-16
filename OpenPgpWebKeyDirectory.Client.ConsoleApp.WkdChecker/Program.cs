@@ -11,6 +11,7 @@ using CommandLine.Text;
 using CSharpFunctionalExtensions;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using OpenPgpWebKeyDirectory.Client.ConsoleApp.WkdChecker.Options;
 using OpenPgpWebKeyDirectory.Client.Library;
 using OpenPgpWebKeyDirectory.Client.Library.BouncyCastle;
 using OpenPgpWebKeyDirectory.Client.Library.Errors;

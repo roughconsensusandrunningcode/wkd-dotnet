@@ -13,7 +13,8 @@ using OpenPgpWebKeyDirectory.Client.Library.Errors;
 namespace OpenPgpWebKeyDirectory.Client.Library.Tests;
 
 internal class MockPgpKey
-{ }
+{
+}
 
 internal class MockPgpKeyWrapper : IPgpKeyWrapper<MockPgpKey>
 {
