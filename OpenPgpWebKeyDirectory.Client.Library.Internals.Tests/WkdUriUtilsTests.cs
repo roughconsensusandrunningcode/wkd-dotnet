@@ -6,13 +6,12 @@
 *   Licensed under MIT License (see LICENSE)
 */
 
-using OpenPgpWebKeyDirectory.Client.Library.Internals;
 using System.Net.Mail;
 
-namespace OpenPgpWebKeyDirectory.Client.Library.Tests;
+namespace OpenPgpWebKeyDirectory.Client.Library.Internals.Tests;
 
 [TestClass()]
-public class UrisTests
+public class WkdUriUtilsTests
 {
     [TestMethod()]
     [Description("Key discovery URIs for Joe.Doe@example.com")]

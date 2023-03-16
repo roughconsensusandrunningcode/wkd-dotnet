@@ -6,11 +6,9 @@
 *   Licensed under MIT License (see LICENSE)
 */
 
-using OpenPgpWebKeyDirectory.Client.Library.Internals;
 using System.Text;
 
-namespace OpenPgpWebKeyDirectory.Client.Library.Tests;
-
+namespace OpenPgpWebKeyDirectory.Client.Library.Internals.Tests;
 [TestClass()]
 public class Crc24CalculatorTest
 {

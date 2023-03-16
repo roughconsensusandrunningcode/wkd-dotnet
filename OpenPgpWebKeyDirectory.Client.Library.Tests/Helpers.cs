@@ -42,12 +42,6 @@ internal static class Helpers
         return result;
     }
 
-    internal static WkdInternalResponse<T> TestSuccessResponse<T>(this WkdInternalResponse<T> response, Action<T> testAction)
-    {
-        testAction.Invoke(response.Value);
-        return response;
-    }
-
     internal static WkdErrorCollection TestFailureResponse(this WkdErrorCollection errors, Action<WkdErrorCollection> testAction)
     {
         testAction.Invoke(errors);

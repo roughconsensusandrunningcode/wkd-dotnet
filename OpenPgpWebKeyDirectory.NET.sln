@@ -21,7 +21,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenPgpWebKeyDirectory.Clie
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenPgpWebKeyDirectory.Client.ConsoleApp.WkdChecker", "OpenPgpWebKeyDirectory.Client.ConsoleApp.WkdChecker\OpenPgpWebKeyDirectory.Client.ConsoleApp.WkdChecker.csproj", "{DF72C45F-78F6-43EB-BF32-40A172756AAE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenPgpWebKeyDirectory.Client.Library.Extensions.DependencyInjection.Tests", "OpenPgpWebKeyDirectory.Client.Library.Extensions.DependencyInjection.Tests\OpenPgpWebKeyDirectory.Client.Library.Extensions.DependencyInjection.Tests.csproj", "{61CF3671-AFBB-4C17-A182-DF1AA5800C49}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenPgpWebKeyDirectory.Client.Library.Extensions.DependencyInjection.Tests", "OpenPgpWebKeyDirectory.Client.Library.Extensions.DependencyInjection.Tests\OpenPgpWebKeyDirectory.Client.Library.Extensions.DependencyInjection.Tests.csproj", "{61CF3671-AFBB-4C17-A182-DF1AA5800C49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenPgpWebKeyDirectory.Client.Library.Internals.Tests", "OpenPgpWebKeyDirectory.Client.Library.Internals.Tests\OpenPgpWebKeyDirectory.Client.Library.Internals.Tests.csproj", "{69988098-67C4-4FA2-9993-6CC2D3CB4883}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +55,10 @@ Global
 		{61CF3671-AFBB-4C17-A182-DF1AA5800C49}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61CF3671-AFBB-4C17-A182-DF1AA5800C49}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61CF3671-AFBB-4C17-A182-DF1AA5800C49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69988098-67C4-4FA2-9993-6CC2D3CB4883}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69988098-67C4-4FA2-9993-6CC2D3CB4883}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69988098-67C4-4FA2-9993-6CC2D3CB4883}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69988098-67C4-4FA2-9993-6CC2D3CB4883}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
