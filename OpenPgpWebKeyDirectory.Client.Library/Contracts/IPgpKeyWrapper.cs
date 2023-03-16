@@ -44,4 +44,3 @@ public interface IPgpKeyWrapper<TKey>
 
     TKey Key { get; }
 }
-

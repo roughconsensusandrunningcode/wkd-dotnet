@@ -75,5 +75,4 @@ public class WkdPolicy
 
     public override string ToString()
         => string.Join("\n", Flags());
-
 }

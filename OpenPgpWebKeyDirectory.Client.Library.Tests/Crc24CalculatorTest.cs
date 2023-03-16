@@ -14,7 +14,6 @@ namespace OpenPgpWebKeyDirectory.Client.Library.Tests;
 [TestClass()]
 public class Crc24CalculatorTest
 {
-
     [TestMethod()]
     [Description("Test vectors from https://github.com/froydnj/ironclad/blob/master/testing/test-vectors/crc24.testvec")]
     public void StandardTests()

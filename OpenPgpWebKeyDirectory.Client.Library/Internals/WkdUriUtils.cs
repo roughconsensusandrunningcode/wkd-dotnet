@@ -71,5 +71,4 @@ internal static class WkdUriUtils
 
     internal static IEnumerable<WkdUriDescriptor> SubmissionAddressUris(string domain)
         => WellKnownUris(domain).Select(uri => uri.MakeRelative("submission-address"));
-
 }

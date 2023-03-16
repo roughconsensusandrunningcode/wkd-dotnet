@@ -152,7 +152,6 @@ internal static class Program
 
     static async Task Main(string[] args)
     {
-
         Console.WriteLine(HeadingInfo.Default);
 
         var host = BuildApp();
@@ -209,7 +208,6 @@ internal static class Program
                         });
 
                     cmd.WithParsed<ExitOptions>(opts => exit = true);
-
                 } while (!exit);
             });
     }

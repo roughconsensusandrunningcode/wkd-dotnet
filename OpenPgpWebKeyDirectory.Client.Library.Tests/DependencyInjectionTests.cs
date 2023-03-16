@@ -158,5 +158,4 @@ public class DependencyInjectionTests
             ?.GetValue(client) as T
             ?? throw new Exception("Failed to find requested field!");
     }
-
 }

@@ -21,7 +21,6 @@ public enum OpenPgpPublicKeyAlgorithm
     ECDH = 18,
     ECDsa = 19,
 
-
     ElGamalEncryptOrSign = 20,
     DiffieHellman = 21,
 

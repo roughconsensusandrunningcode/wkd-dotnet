@@ -22,4 +22,3 @@ public class TestCase
     public string CertificatePath { get; set; } = String.Empty;
     public string LookupUri { get; set; } = String.Empty;
 }
-

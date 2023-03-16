@@ -77,7 +77,6 @@ public class WkdKeyDiscoveryTests : WkdTestsBase
                     .ShouldHaveRejectedKeys(1);
 
                 CollectionAssert.AllItemsAreInstancesOfType(response.RejectedKeys.Select(item => item.RejectionReason).ToList(), typeof(RejectionForMissingUserId));
-
             });
     }
 
@@ -178,7 +177,6 @@ public class WkdKeyDiscoveryTests : WkdTestsBase
                     .ShouldHaveMailAddress("primary-uid@example.com")
                     .ShouldHaveMailAddress("secondary-uid@example.com");
             });
-
     }
 
     [TestMethod()]
@@ -298,7 +296,6 @@ public class WkdKeyDiscoveryTests : WkdTestsBase
                     .ShouldHaveValidKeys(1);
             });
     }
-
 
     [TestMethod()]
     [Description("Pass null string as address")]

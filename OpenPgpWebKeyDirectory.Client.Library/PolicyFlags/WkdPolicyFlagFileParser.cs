@@ -91,4 +91,3 @@ internal class WkdPolicyFlagFileParser
         return (policy, errors);
     }
 }
-

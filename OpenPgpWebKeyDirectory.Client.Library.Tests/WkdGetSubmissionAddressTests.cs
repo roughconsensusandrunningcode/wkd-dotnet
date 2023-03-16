@@ -61,7 +61,6 @@ public class WkdGetSubmissionAddressTests : WkdTestsBase
     [TestMethod()]
     public async Task GetSubmissionAddressAsyncPassNullTest()
     {
-
         await Assert.ThrowsExceptionAsync<ArgumentNullException>(async () =>
         {
             var client = BuildClient();

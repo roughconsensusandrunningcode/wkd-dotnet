@@ -6,7 +6,6 @@
  *   Licensed under MIT License (see LICENSE)
  */
 
-
 namespace OpenPgpWebKeyDirectory.Client.Library.Errors;
 
 public class WkdDataValidationError : WkdError

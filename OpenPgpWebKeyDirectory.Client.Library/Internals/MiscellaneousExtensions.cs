@@ -49,5 +49,4 @@ internal static class MiscellaneousExtensions
             ? Result.Success<int, WkdDataValidationError>(result)
             : new WkdDataValidationError($"Invalid number {number}");
     }
-
 }

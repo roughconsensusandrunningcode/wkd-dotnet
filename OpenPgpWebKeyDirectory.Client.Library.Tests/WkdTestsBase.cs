@@ -16,7 +16,6 @@ namespace OpenPgpWebKeyDirectory.Client.Library.Tests;
 [TestClass()]
 public abstract class WkdTestsBase
 {
-
     protected static IWkdClient<PgpPublicKeyRing> BuildClient()
         => BuildClient(_ => { }, _ => { _.WithDefaultValidators(); });
 

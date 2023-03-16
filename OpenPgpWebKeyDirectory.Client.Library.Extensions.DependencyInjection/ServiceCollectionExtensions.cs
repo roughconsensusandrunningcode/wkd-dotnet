@@ -10,7 +10,6 @@ using OpenPgpWebKeyDirectory.Client.Library;
 using OpenPgpWebKeyDirectory.Client.Library.Contracts;
 using OpenPgpWebKeyDirectory.Client.Library.Extensions.DependencyInjection;
 
-
 namespace Microsoft.Extensions.DependencyInjection;
 
 /// <summary>

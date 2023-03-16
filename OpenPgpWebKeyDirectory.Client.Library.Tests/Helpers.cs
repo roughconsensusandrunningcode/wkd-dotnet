@@ -229,8 +229,6 @@ internal static class Helpers
         return key;
     }
 
-
-
     internal static WkdErrorCollection AllErrorsAreInstancesOf<T>(this WkdErrorCollection errors)
     {
         CollectionAssert.AllItemsAreInstancesOfType(errors.ToList(), typeof(T));
@@ -263,5 +261,4 @@ internal static class Helpers
         CollectionAssert.AllItemsAreInstancesOfType(innerExceptions, typeof(T2));
         return errors;
     }
-
 }

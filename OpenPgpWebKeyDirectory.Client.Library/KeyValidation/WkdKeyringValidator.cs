@@ -52,5 +52,4 @@ public sealed class WkdKeyringValidator<TKey>
 
         return new KeyValidationResult<TKey>(acceptedKeys, rejectedKeys);
     }
-
 }

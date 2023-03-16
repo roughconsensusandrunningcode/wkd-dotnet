@@ -39,5 +39,4 @@ public class WkdNetworkError : WkdError
     public Maybe<HttpStatusCode> StatusCode { get; private set; }
 
     public Exception NetworkException { get; private set; }
-
 }
