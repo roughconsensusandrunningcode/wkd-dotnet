@@ -8,13 +8,8 @@
 
 using CSharpFunctionalExtensions;
 using OpenPgpWebKeyDirectory.Client.Library.Contracts;
-using OpenPgpWebKeyDirectory.Client.Library.Errors;
 
-namespace OpenPgpWebKeyDirectory.Client.Library.Tests;
-
-internal class MockPgpKey
-{
-}
+namespace OpenPgpWebKeyDirectory.Client.Library.Extensions.DependencyInjection.Tests;
 
 internal class MockPgpKeyWrapper : IPgpKeyWrapper<MockPgpKey>
 {
@@ -44,13 +39,5 @@ internal class MockPgpKeyWrapper : IPgpKeyWrapper<MockPgpKey>
     public string[] GetUserIds()
     {
         throw new NotImplementedException();
-    }
-}
-
-internal class MockPgpKeyParser : IPgpKeyParser<MockPgpKey>
-{
-    public Result<IEnumerable<IPgpKeyWrapper<MockPgpKey>>, WkdErrorCollection> Parse(Stream inputStream)
-    {
-        return Array.Empty<MockPgpKeyWrapper>();
     }
 }

@@ -12,7 +12,7 @@ using OpenPgpWebKeyDirectory.Client.Library.Contracts;
 using OpenPgpWebKeyDirectory.Client.Library.KeyValidation;
 using System.Reflection;
 
-namespace OpenPgpWebKeyDirectory.Client.Library.Tests;
+namespace OpenPgpWebKeyDirectory.Client.Library.Extensions.DependencyInjection.Tests;
 
 [TestClass()]
 public class DependencyInjectionTests
