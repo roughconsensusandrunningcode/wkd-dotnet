@@ -31,12 +31,12 @@ internal static class WkdUriUtils
         domain = domain.ToLowerInvariant();
 
         var uris = new WkdUriDescriptor[] {
-            new WkdUriDescriptor(
+            new(
                 WkdMethod.Advanced,
                 new Uri($"https://openpgpkey.{domain}/.well-known/openpgpkey/{domain}/"),
                 "Advanced method failed, fall back to the direct method"),
 
-            new WkdUriDescriptor(
+            new(
                 WkdMethod.Direct,
                 new Uri($"https://{domain}/.well-known/openpgpkey/"),
                 "Direct method failed")

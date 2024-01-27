@@ -1,11 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-	  <TargetFrameworks>net6.0;net7.0</TargetFrameworks>
+	  <TargetFrameworks>net6.0;net8.0</TargetFrameworks>
 	  <ImplicitUsings>enable</ImplicitUsings>
 	  <Nullable>enable</Nullable>
-	  <VersionPrefix>0.15.0</VersionPrefix>
+	  <VersionPrefix>0.17.0</VersionPrefix>
 	  <VersionSuffix>draft</VersionSuffix>
+	  <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
 	  <Authors>Fabrizio Tarizzo</Authors>
 	  <Copyright>Copyright (c) 2022 Fabrizio Tarizzo</Copyright>
 	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
@@ -25,8 +26,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="CSharpFunctionalExtensions" Version="2.39.0" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.0" />
+    <PackageReference Include="CSharpFunctionalExtensions" Version="2.40.3" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.0" />
   </ItemGroup>
 
 </Project>

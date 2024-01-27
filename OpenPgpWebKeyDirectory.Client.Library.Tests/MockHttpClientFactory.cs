@@ -67,7 +67,7 @@ internal class MockHttpClientFactory
             .Respond(_ =>
             {
                 Thread.Sleep(500);
-                return new ByteArrayContent(Array.Empty<byte>());
+                return new ByteArrayContent([]);
             });
 
         mock
@@ -75,8 +75,10 @@ internal class MockHttpClientFactory
             .Respond(_ =>
             {
                 Thread.Sleep(500);
-                return new ByteArrayContent(Array.Empty<byte>());
+                return new ByteArrayContent([]);
             });
+
+        mock.Fallback.Throw(new HttpRequestException());
 
         return mock.ToHttpClient();
     }

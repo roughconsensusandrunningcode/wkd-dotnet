@@ -11,5 +11,5 @@ namespace OpenPgpWebKeyDirectory.Client.Library.Tests;
 public class TestSuite
 {
     public string Version { get; set; } = String.Empty;
-    public TestCase[] TestCases { get; set; } = Array.Empty<TestCase>();
+    public TestCase[] TestCases { get; set; } = [];
 }

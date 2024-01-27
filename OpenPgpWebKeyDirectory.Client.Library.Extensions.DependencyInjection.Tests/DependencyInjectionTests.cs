@@ -77,7 +77,7 @@ public class DependencyInjectionTests
     [Description("Get Service Test with default Useragent default")]
     public void GetServiceWithDefaultUserAgentConfigurationTest()
     {
-        string defaultUserAgent = ".NET WKD Client/0.15.0-draft (https://github.com/roughconsensusandrunningcode/wkd-dotnet)";
+        string defaultUserAgent = ".NET WKD Client/0.17.0-draft (https://github.com/roughconsensusandrunningcode/wkd-dotnet)";
         var serviceCollection = new ServiceCollection();
         serviceCollection.AddWebKeyDirectory<MockPgpKey, MockPgpKeyParser>();
 
